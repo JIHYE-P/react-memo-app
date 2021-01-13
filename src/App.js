@@ -73,7 +73,7 @@ function App() {
     <section className="w-96">
       <h1 className="font-mono text-2xl text-gray-700 text-center mb-5">My Memo</h1>
       <Route path='/' exact>
-        <Main items={items} data={initial} onDelete={onDelete} onFiltering={onFiltering} />
+        <Main items={items} data={initial} onDelete={onDelete} />
       </Route>
       <Route path='/insert' location={location}>
         <Form data={value} setData={setValue} onChange={onChange} onInsert={onInsert} />

@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Item from '../components/Item';
-import Filtering from '../components/Filtering';
 
-const Main = ({data, items, onDelete, onFind}) => {
+const Main = ({data, items, onDelete}) => {
   return <>
     {/* <div className="w-full my-5">
       <Filtering onFind={onFind} />
@@ -19,7 +18,7 @@ const Main = ({data, items, onDelete, onFind}) => {
     <section className="w-full rounded-md bg-neumo shadow-neumo">
       {items.length > 0 
       ? items.map((item, i) => <Item key={`item${i}`} to={{pathname: '/insert', state: item}} data={item} onDelete={onDelete} />) 
-      : <div className="relative p-4 border-b-1 border-gray-300 text-md font-mono font-bold text-gray-500">Not Found.</div>
+      : <div className="relative p-4 border-b-1 border-gray-300 text-md font-mono font-bold text-gray-500 text-center">Not Found.</div>
       }
     </section>
   </>
