@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  background: #e5e7eb;
+}
+.swal-overlay {
+  background: rgba(230, 231, 238, 0.95);
+}
+.swal-modal {
+  background: #e6e7ee;
+  box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+}
+.swal-text {
+  font-family: 'NanumSquareRoundB';
+  font-size: 1rem;
+  color: #333;
+}
+.swal-button {
+  background: #e6e7ee;
+  box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+  color: #4b5563;
+  &:focus {
+    background: #e6e7ee;
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+  }
+}
+.swal-button:not([disabled]):hover {
+  background: #e6e7ee;
+  box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+}

@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'NanumSquareRoundR';
+    src: url('https://hashsnap-static.s3.ap-northeast-2.amazonaws.com/file/fonts/NanumSquareRoundR.ttf') format("truetype");
+  }
+  @font-face {
+    font-family: 'NanumSquareRoundB';
+    src: url('https://hashsnap-static.s3.ap-northeast-2.amazonaws.com/file/fonts/NanumSquareRoundB.ttf') format("truetype");
+  }
+}
