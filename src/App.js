@@ -71,7 +71,7 @@ function App() {
   
   return <main className='flex flex-col flex-wrap items-center justify-center w-full h-full'>
     <section className="w-96">
-      <h1 className="font-mono text-2xl text-gray-700 text-center mb-5">My Memo</h1>
+      <h1 className="font-mono text-2xl text-gray-700 text-center mb-5">Memo app</h1>
       <Route path='/' exact>
         <Main items={items} data={initial} onDelete={onDelete} />
       </Route>
